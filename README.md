@@ -28,26 +28,20 @@
 ##### Exam
 Run container ubuntu:16.04
 <pre><code>docker run -it --rm ubuntu:16.04 /bin/bash</code></pre> 
-if have no image ubuntu:16.04, docker pull that image
+if have no image ubuntu:16.04, docker will pull that image
 
 exit container
 <pre><code>exit</code></pre>
 and restart same container
-<pre><code>
-docker start [container ID or NAME]
-docker attach [container ID or NAME]
-</code></pre>
+<pre><code>docker start [container ID or NAME]
+docker attach [container ID or NAME]</code></pre>
 
 if you want to use host pc a little while
-<pre><code>
-ctr+p+q
-</code></pre>
+<pre><code>ctr+p+q</code></pre>
 and restart
-<pre><code>
-docker attach [container ID or NAME}
-</code></pre>
+<pre><code>docker attach [container ID or NAME}</code></pre>
 
 check container in host
-<pre><code>
-docker ps -a
-</code></pre>
+<pre><code>docker ps -a</code></pre>
+
+
