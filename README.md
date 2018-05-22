@@ -1,5 +1,5 @@
 # Docker_study
-### 1. install in ubuntu 16.04
+### 1. Install in ubuntu 16.04
 <pre><code>sudo apt-get update</code></pre>
 <pre><code>sudo apt-get install apt-transport-https ca-certificates curl software-properties-common</code></pre>
 <pre><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</code></pre>
@@ -11,3 +11,6 @@
 <pre><code>sudo apt-get update</code></pre>
 <pre><code>sudo apt-get install docker-ce</code></pre>
 <pre><code>sudo docker run hello-world</code></pre>
+
+### 2. Handling Container 
+#####<pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
