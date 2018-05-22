@@ -8,3 +8,6 @@
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
     stable"</code></pre>
+<pre><code>sudo apt-get update</code></pre>
+<pre><code>sudo apt-get install docker-ce</code></pre>
+<pre><code>sudo docker run hello-world</code></pre>
