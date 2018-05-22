@@ -1,2 +1,3 @@
 # Docker_study
-basic
+##*install
+###<pre><code>sudo apt-get update</code></pre>
