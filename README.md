@@ -13,4 +13,15 @@
 <pre><code>sudo docker run hello-world</code></pre>
 
 ### 2. Handling Container 
-#####<pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
+##### basic run container
+<pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
+
+##### Options
+1. -d : back ground mode
+2. -p : connect host and container using port
+3. -v : mount directory host and container
+4. -e : set environment variable in container
+5. --name : set container name
+6. -rm : when container exit, that container remove
+7. -it : terminal entry
+
