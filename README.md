@@ -21,8 +21,7 @@ sudo apt-get install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd</code></pre><br><br>
 ### 2. Handling Container 
 ##### basic run container
-<pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
-<br>
+<pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre><br>
 ##### Options
 1. -d : back ground mode
 2. -p : connect host and container using port
@@ -30,8 +29,7 @@ sudo pkill -SIGHUP dockerd</code></pre><br><br>
 4. -e : set environment variable in container
 5. --name : set container name
 6. --rm : when container exit, that container remove
-7. -it : terminal entry
-<br>
+7. -it : terminal entry<br>
 ##### Exam
 Run container ubuntu:16.04
 <pre><code>docker run -it ubuntu:16.04 /bin/bash</code></pre> 
@@ -59,16 +57,14 @@ and all exited container remove
 <pre><code>docker rm -v $(docker ps -a -q -f status=exited)</code></pre>
 
 check container in host
-<pre><code>docker ps -a</code></pre>
-
-<br><br>
+<pre><code>docker ps -a</code></pre><br><br>
 ### 3. Image handling
 ######Check images list
-<pre><code>docker images</code></pre>
-<br>
+<pre><code>docker images</code></pre><br>
+
 ######Download image
-<pre><code>docker pull [OPTIONS] NAME:TAG</code></pre>
-<br>
+<pre><code>docker pull [OPTIONS] NAME:TAG</code></pre><br>
+
 ######Remove image
 <pre><code>docker rmi [IMAGE ID]</code></pre>
 
