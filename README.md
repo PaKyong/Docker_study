@@ -27,12 +27,17 @@
 
 ##### Exam
 Run container ubuntu:16.04
-<pre><code>docker run -it --rm ubuntu:16.04 /bin/bash</code></pre> 
+<pre><code>docker run -it ubuntu:16.04 /bin/bash</code></pre> 
 if have no image ubuntu:16.04, docker will pull that image
 
 exit container
 <pre><code>exit</code></pre>
-and restart same container
+remove exited container
+<pre><code>docker rm [contatiner ID or NAME]</code></pre>
+or if you remove container when exit, input --rm in [OPTIONS] when container run
+<pre></code>docker run -it --rm [Imagename:TAG] /bin/bash</code></pre>
+
+if you want to restart exited container not remove
 <pre><code>docker start [container ID or NAME]
 docker attach [container ID or NAME]</code></pre>
 
