@@ -1,4 +1,4 @@
-# Docker_study
+# Docker_study<br><br>
 ### 1. Install in ubuntu 16.04
 <pre><code>sudo apt-get update</code></pre>
 <pre><code>sudo apt-get install apt-transport-https ca-certificates curl software-properties-common</code></pre>
@@ -11,7 +11,7 @@
 <pre><code>sudo apt-get update</code></pre>
 <pre><code>sudo apt-get install docker-ce</code></pre>
 <pre><code>sudo docker run hello-world</code></pre>
-
+<br>
 ### 1.1 Install nvidia-docker
 <pre><code>curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -
@@ -20,11 +20,11 @@ curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64/nvidia-docke
 sudo apt-get update
 sudo apt-get install -y nvidia-docker2
 sudo pkill -SIGHUP dockerd</code></pre>
-
+<br><br>
 ### 2. Handling Container 
 ##### basic run container
 <pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
-
+<br>
 ##### Options
 1. -d : back ground mode
 2. -p : connect host and container using port
@@ -33,7 +33,7 @@ sudo pkill -SIGHUP dockerd</code></pre>
 5. --name : set container name
 6. --rm : when container exit, that container remove
 7. -it : terminal entry
-
+<br>
 ##### Exam
 Run container ubuntu:16.04
 <pre><code>docker run -it ubuntu:16.04 /bin/bash</code></pre> 
@@ -54,7 +54,6 @@ if you want to use host pc a little while
 <pre><code>ctr+p+q</code></pre>
 and restart
 <pre><code>docker attach [container ID or NAME}</code></pre>
-<br>
 but if you want to exit container with ctr+p+q 
 <pre><code>ctr+p+q
 docker stop [conatiner ID or NAME]</code></pre>
@@ -64,9 +63,15 @@ and all exited container remove
 check container in host
 <pre><code>docker ps -a</code></pre>
 
-
+<br><br>
 ### 3. Image handling
 ######Check images list
 <pre><code>docker images</code></pre>
+<br>
+######Download image
+<pre><code>docker pull [OPTIONS] NAME:TAG</code></pre>
+<br>
+######Remove image
+<pre><code>docker rmi [IMAGE ID]</code></pre>
 
 
