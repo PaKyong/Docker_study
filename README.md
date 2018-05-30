@@ -77,7 +77,18 @@ This is my try
 <pre><code>cd ~
 mkdir dockerfiles
 cd dockerfiles
-vim Dockerfile
+vim Dockerfile</code></pre>
 
+###### Dockerfile basic command
+###### FROM
+'FROM' select basic image
+'FROM' must use in Dockerfile
+exam
+<pre><code>FROM [basic_image:tag]
+FROM ubuntu:16.04</code></pre><br>
+###### MAINTAINER
+'MAINTAINER' write manager_email of this image
+exam
+<pre><code>MAINTAINER aaa@aaaa.aaa</code></pre><br>
 
 
