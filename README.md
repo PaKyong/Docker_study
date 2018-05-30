@@ -79,7 +79,7 @@ mkdir dockerfiles
 cd dockerfiles
 vim Dockerfile</code></pre>
 
-#### Dockerfile basic command
+#### 3.1 Dockerfile basic command
 #### FROM
 'FROM' select basic image
 'FROM' must use in Dockerfile
