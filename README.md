@@ -82,26 +82,26 @@ vim Dockerfile</code></pre>
 #### 3.1 Dockerfile basic command
 #### FROM
 'FROM' select basic image
-'FROM' must use in Dockerfile
+'FROM' must use in Dockerfile<br>
 exam
 <pre><code>FROM [basic_image:tag]
 FROM ubuntu:16.04</code></pre><br>
 #### MAINTAINER
-'MAINTAINER' write manager_email of this image
+'MAINTAINER' write manager_email of this image<br>
 exam
 <pre><code>MAINTAINER aaa@aaaa.aaa</code></pre><br>
 #### RUN
 'RUN' is best-using command in Dockerfile
-'RUN' execute command_line in basic_image for making image
+'RUN' execute command_line in basic_image for making image<br>
 exam
 <pre><code>RUN [command]
 RUN apt update</code></pre>
-'RUN' is executed is layer. but many layer is bad. so similar [command] should write one 'RUN'
+'RUN' is executed is layer. but many layer is bad. so similar [command] should write one 'RUN'<br>
 exam
 <pre><code>RUN apt update
 RUN apt upgrade
 == RUN apt update && apt upgrade</code></pre><br>
 #### ENV
-'ENV' select evironment variable in container
+'ENV' select evironment variable in container<br>
 exam
 <pre><code>ENV python=python3</code></pre><br>
