@@ -10,8 +10,7 @@
     stable"</code></pre>
 <pre><code>sudo apt-get update</code></pre>
 <pre><code>sudo apt-get install docker-ce</code></pre>
-<pre><code>sudo docker run hello-world</code></pre>
-<br>
+<pre><code>sudo docker run hello-world</code></pre><br>
 ### 1.1 Install nvidia-docker
 <pre><code>curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
   sudo apt-key add -
@@ -19,8 +18,7 @@ curl -s -L https://nvidia.github.io/nvidia-docker/ubuntu16.04/amd64/nvidia-docke
   sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 sudo apt-get update
 sudo apt-get install -y nvidia-docker2
-sudo pkill -SIGHUP dockerd</code></pre>
-<br><br>
+sudo pkill -SIGHUP dockerd</code></pre><br><br>
 ### 2. Handling Container 
 ##### basic run container
 <pre><code>docker run [OPTIONS] [Imagename:TAG] /bin/bash</code></pre>
