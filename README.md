@@ -59,13 +59,13 @@ and all exited container remove
 check container in host
 <pre><code>docker ps -a</code></pre><br><br>
 ### 3. Image handling
-######Check images list
+#####Check images list
 <pre><code>docker images</code></pre><br>
 
-######Download image
+#####Download image
 <pre><code>docker pull [OPTIONS] NAME:TAG</code></pre><br>
 
-######Remove image
+#####Remove image
 <pre><code>docker rmi [IMAGE ID]</code></pre>
 
 \
