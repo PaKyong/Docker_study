@@ -74,4 +74,5 @@ check container in host
 ######Remove image
 <pre><code>docker rmi [IMAGE ID]</code></pre>
 
+\
 
