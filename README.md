@@ -59,14 +59,25 @@ and all exited container remove
 check container in host
 <pre><code>docker ps -a</code></pre><br><br>
 ### 3. Image handling
-#####Check images list
+##### Check images list
 <pre><code>docker images</code></pre><br>
 
-#####Download image
+##### Download image
 <pre><code>docker pull [OPTIONS] NAME:TAG</code></pre><br>
 
-#####Remove image
-<pre><code>docker rmi [IMAGE ID]</code></pre>
+##### Remove image
+<pre><code>docker rmi [IMAGE ID]</code></pre><br>
 
-\
+##### Image commit by container
+When you want to save working container to image
+<pre><code>docker commit [container ID or NAME] [Image_NAME:tag]</code></pre><br>
+
+##### Make image using 'Dockerfile'
+This is my try
+<pre><code>cd ~
+mkdir dockerfiles
+cd dockerfiles
+vim Dockerfile
+
+
 
