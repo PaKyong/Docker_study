@@ -54,6 +54,11 @@ if you want to use host pc a little while
 <pre><code>ctr+p+q</code></pre>
 and restart
 <pre><code>docker attach [container ID or NAME}</code></pre>
+but if you want to exit container with ctr+p+q 
+<pre><code>ctr+p+q
+docker stop [conatiner ID or NAME]</code></pre>
+and all exited container remove
+<pre><code>docker rm -v $(docker ps -a -q -f status=exited)</code></pre>
 
 check container in host
 <pre><code>docker ps -a</code></pre>
